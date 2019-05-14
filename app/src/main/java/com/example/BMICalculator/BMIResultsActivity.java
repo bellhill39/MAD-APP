@@ -1,4 +1,4 @@
-package com.example.mad;
+package com.example.BMICalculator;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.mad.navigationLayouts.BackwardFormNavigation;
+import com.example.BMICalculator.navigationLayouts.BackwardFormNavigation;
 
 public class BMIResultsActivity extends AppCompatActivity implements BackwardFormNavigation {
 

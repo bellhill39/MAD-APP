@@ -8,114 +8,12 @@
 
 
     <android.support.constraint.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="395dp"
-        android:layout_height="355dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="63dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="141dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <EditText
-            android:id="@+id/etWeight"
-            android:layout_width="134dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="155dp" />
-
-        <EditText
-            android:id="@+id/etFeet"
-            android:layout_width="134dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="44dp" />
-
-        <EditText
-            android:id="@+id/etInch"
-            android:layout_width="134dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            tools:layout_editor_absoluteX="211dp"
-            tools:layout_editor_absoluteY="44dp" />
-
-        <RadioGroup
-            android:id="@+id/rdgGender"
-            android:layout_width="158dp"
-            android:layout_height="64dp"
-            android:layout_marginEnd="26dp"
-            android:layout_marginBottom="149dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
-
-            <RadioButton
-                android:id="@+id/rdMale"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Male"
-                tools:layout_editor_absoluteX="38dp"
-                tools:layout_editor_absoluteY="273dp" />
-
-            <RadioButton
-                android:id="@+id/rdFemale"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Female"
-                tools:layout_editor_absoluteX="38dp"
-                tools:layout_editor_absoluteY="273dp" />
-        </RadioGroup>
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="37dp"
-            android:layout_height="23dp"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="56dp"
-            android:text="ft"
-            app:layout_constraintStart_toEndOf="@+id/etFeet"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="37dp"
-            android:layout_height="23dp"
-            android:layout_marginStart="7dp"
-            android:layout_marginBottom="167dp"
-            android:text="kg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/etWeight" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="37dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="56dp"
-            android:layout_marginEnd="6dp"
-            android:text="inch"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/etInch"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </android.support.constraint.ConstraintLayout>
-
-    <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="395dp"
         android:layout_height="111dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="61dp"
+        android:layout_marginBottom="73dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -148,4 +46,110 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="395dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etFeet"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etInch"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="7dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rdgGender"
+            android:layout_width="158dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="324dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView3">
+
+            <RadioButton
+                android:id="@+id/rdMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="273dp" />
+
+            <RadioButton
+                android:id="@+id/rdFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="273dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="37dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="54dp"
+            android:text="ft"
+            app:layout_constraintStart_toEndOf="@+id/etFeet"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="37dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="336dp"
+            android:text="kg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/etWeight" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="37dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="4dp"
+            android:text="inch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="336dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
 </android.support.constraint.ConstraintLayout>

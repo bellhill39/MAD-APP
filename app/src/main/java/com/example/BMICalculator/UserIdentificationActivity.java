@@ -1,4 +1,4 @@
-package com.example.mad;
+package com.example.BMICalculator;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,12 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.mad.navigationLayouts.ForwardFormNavigation;
+import com.example.BMICalculator.navigationLayouts.ForwardFormNavigation;
 
 public class UserIdentificationActivity extends AppCompatActivity implements ForwardFormNavigation {
 
-    EditText etName;
-    EditText etEmail;
+    private   EditText etName;
+    private EditText etEmail;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +24,11 @@ public class UserIdentificationActivity extends AppCompatActivity implements For
 
     @Override
     public void initializeElements() {
+
+
         etName = (EditText) findViewById(R.id.etName);
         etEmail = (EditText) findViewById(R.id.etEmail);
+
 
     }
 
@@ -37,6 +41,7 @@ public class UserIdentificationActivity extends AppCompatActivity implements For
 
             Intent btnNextIntent = new Intent(UserIdentificationActivity.this, UserDetailsActivity.class);
             btnNextIntent.putExtra(Constants.KEY_USER,user);
+
             startActivity(btnNextIntent);
         }
     }

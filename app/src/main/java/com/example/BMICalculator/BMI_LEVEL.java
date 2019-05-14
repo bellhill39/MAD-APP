@@ -1,4 +1,4 @@
-package com.example.mad;
+package com.example.BMICalculator;
 
 public enum  BMI_LEVEL {
 

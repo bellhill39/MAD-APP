@@ -1,4 +1,4 @@
-package com.example.mad;
+package com.example.BMICalculator;
 
 import java.io.Serializable;
 

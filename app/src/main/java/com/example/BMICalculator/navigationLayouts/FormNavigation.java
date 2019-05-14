@@ -1,4 +1,4 @@
-package com.example.mad.navigationLayouts;
+package com.example.BMICalculator.navigationLayouts;
 
 import android.view.View;
 

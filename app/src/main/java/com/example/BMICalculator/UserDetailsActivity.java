@@ -1,4 +1,4 @@
-package com.example.mad;
+package com.example.BMICalculator;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.example.mad.navigationLayouts.FormNavigation;
+import com.example.BMICalculator.navigationLayouts.FormNavigation;
 
 public class UserDetailsActivity extends AppCompatActivity implements FormNavigation {
 
